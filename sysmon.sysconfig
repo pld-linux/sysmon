@@ -1,0 +1,20 @@
+#Sysmon service options
+
+#options to append at startup
+# -b             : IP Address to listen on
+# -f config-file : Alternate config file location
+# -n             : Don't do notifies
+# -d             : Don't fork
+# -i             : Disable ICMP
+# -v             : Print version then exit
+# -w             : Toggle warning messages
+# -D             : Toggle debug messages
+# -M             : Toggle memory debugging
+# -t             : Test/check config file then exit
+# -p #           : Change port number listening on (0 to disable)
+# -q             : Quiet
+# -l             : do not syslog
+SYSMOND_OPTIONS=""
+
+#service configuration file
+SYSMOND_CONFIG=/etc/sysmon.conf
