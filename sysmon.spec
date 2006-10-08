@@ -10,12 +10,9 @@ Group:		Applications
 Source0:	ftp://puck.nether.net/pub/jared/%{name}-%{version}.tar.gz
 # Source0-md5:	be9304964bfd131be6098c4b7b502cd1
 Source1:	%{name}.init
-# Source1-md5:	d41d8cd98f00b204e9800998ecf8427e
 Source2:	%{name}.sysconfig
-# Source2-md5:	0d7745e331beea331749ba874eb4b5da
 Patch0:		%{name}-DESTDIR-headers.patch
 URL:		http://www.sysmon.org
-BuildRequires:	automake
 BuildRequires:	ncurses-devel
 Requires(post,preun):	/sbin/chkconfig
 Requires:	rc-scripts
@@ -31,7 +28,6 @@ Sysmon to narzêdzie monitorujace dzia³anie sieci. Obecnie obs³ugiwane
 protoko³y to: SMTP, IMAP, HTTP, TCP, UDP, NNTP, oraz testy poprzez
 PING.
 
-
 %prep
 %setup -q
 %patch0 -p1
@@ -43,6 +39,7 @@ PING.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{/etc/rc.d/init.d,%{_mandir}/man1,%{_mandir}/man5,/etc/sysconfig}
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -68,7 +65,7 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc LICENSE WISHLIST docs/[A-Z]* docs/*.jpg docs/*.html examples
+%doc COPYRIGHT WISHLIST docs/[A-Z]* docs/*.jpg docs/*.html examples
 %attr(755,root,root) %{_bindir}/*
 %attr(754,root,root) /etc/rc.d/init.d/sysmond
 %config(noreplace) %verify(not md5 mtime size) /etc/sysconfig/sysmond
