@@ -1,7 +1,7 @@
 # TODO:
 #  - subpackages with stuff from OtherClients
 Summary:	Network monitoring tool
-Summary(pl.UTF-8):   Narzędzie do monitorowania sieci
+Summary(pl.UTF-8):	Narzędzie do monitorowania sieci
 Name:		sysmon
 Version:	0.92.2
 Release:	0.1
