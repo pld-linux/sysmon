@@ -1,7 +1,7 @@
 # TODO:
 #  - subpackages with stuff from OtherClients
 Summary:	Network monitoring tool
-Summary(pl):	Narzêdzie do monitorowania sieci
+Summary(pl.UTF-8):   NarzÄ™dzie do monitorowania sieci
 Name:		sysmon
 Version:	0.92.2
 Release:	0.1
@@ -23,9 +23,9 @@ Sysmon is a network monitoring tool designed to provide high
 performance and accurate network monitoring. Currently supported
 protocols include SMTP, IMAP, HTTP, TCP, UDP, NNTP, and PING tests.
 
-%description -l pl
-Sysmon to narzêdzie monitorujace dzia³anie sieci. Obecnie obs³ugiwane
-protoko³y to: SMTP, IMAP, HTTP, TCP, UDP, NNTP, oraz testy poprzez
+%description -l pl.UTF-8
+Sysmon to narzÄ™dzie monitorujace dziaÅ‚anie sieci. Obecnie obsÅ‚ugiwane
+protokoÅ‚y to: SMTP, IMAP, HTTP, TCP, UDP, NNTP, oraz testy poprzez
 PING.
 
 %prep
